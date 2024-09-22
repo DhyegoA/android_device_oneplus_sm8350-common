@@ -115,9 +115,9 @@ $(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Additional FOSS Applications
-PRODUCT_PACKAGES += \
-    ViMusic \
-    Droid-ify
+# PRODUCT_PACKAGES += \
+#     ViMusic \
+#     Droid-ify
 
 PRODUCT_PACKAGES += \
     android.frameworks.stats@1.0.vendor \
@@ -516,3 +516,6 @@ PRODUCT_BOOT_JARS += \
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm8350-common/sm8350-common-vendor.mk)
+
+# Sign Voltage
+-include vendor/voltage-priv/keys/keys.mk
