@@ -108,6 +108,15 @@ PRODUCT_PACKAGES += \
 # Blur
 TARGET_ENABLE_BLUR := true
 
+# Additional FOSS Applications
+PRODUCT_PACKAGES += \
+    ViMusic \
+    Droid-ify \
+	RevampedFMRadio
+
+# PixelParts
+include packages/apps/PixelParts/device.mk
+
 # Camera
 $(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
 
