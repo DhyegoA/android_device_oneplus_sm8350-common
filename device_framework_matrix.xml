@@ -34,6 +34,14 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
+        <name>android.hardware.biometrics.fingerprint</name>
+        <version>4</version>
+        <interface>
+            <name>IFingerprint</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
         <name>vendor.oplus.hardware.cameraextension</name>
         <interface>
             <name>ICameraExtensionService</name>
