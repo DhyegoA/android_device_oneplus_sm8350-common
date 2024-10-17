@@ -112,10 +112,7 @@ TARGET_ENABLE_BLUR := true
 PRODUCT_PACKAGES += \
     ViMusic \
     Droid-ify \
-	RevampedFMRadio
-
-# PixelParts
-include packages/apps/PixelParts/device.mk
+    RevampedFMRadio
 
 # Camera
 $(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
