@@ -115,10 +115,6 @@ vendor.display.enable_optimize_refresh=1
 # DRM
 drm.service.enabled=true
 
-# Fingerprint
-ro.vendor.fingerprint.type=side
-ro.vendor.fingerprint.sensor_location=1080|860|100|local:4630946741972277890
-
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
