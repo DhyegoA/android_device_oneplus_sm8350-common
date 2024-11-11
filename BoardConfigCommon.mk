@@ -114,10 +114,6 @@ TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig
 TARGET_KERNEL_NO_GCC := true
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     HOSTCFLAGS="-Wno-unused-command-line-argument"
-TARGET_KERNEL_CLANG_VERSION := r487747c
-
-# Include openssl headers
-CFLAGS += -I/usr/include/openssl
 
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(COMMON_PATH)/modules.blocklist
